@@ -1,14 +1,16 @@
 {
   "name": "namada-sdk-tutorial",
   "private": true,
+  "main": "./app/config/index.js",
   "workspaces": [
     "app",
     "namada/*"
   ],
   "scripts": {
-    "start": "cd app && yarn run start",
-    "android": "cd app && yarn run android",
-    "iOS": "cd app && yarn run ios"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
   },
   "dependencies": {
     "@namada/shared": "^0.2.1"

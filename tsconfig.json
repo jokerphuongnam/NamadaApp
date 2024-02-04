@@ -1,0 +1,38 @@
+{
+    "extends": "expo/tsconfig.base",
+    "compilerOptions": {
+      "target": "es5",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "module": "esnext",
+      "isolatedModules": true,
+      "strict": true,
+      "paths": {
+        "@screens/*": [
+          "./app/src/screens/dashboard/*",
+          "./app/src/screens/home/*",
+          "./app/src/screens/main/*",
+          "./app/src/screens/settings/*",
+          "./app/src/screens/route/*"
+        ],
+        "@network/*": [
+          "./app/src/data/network/*"
+        ],
+        "@data_state": [
+          "./app/src/data/domain/data_state"
+        ],
+        "@di/*": [
+          "./app/src/di/*"
+        ]
+      }
+    },
+    "include": [
+        "namada"
+    ]
+  }
