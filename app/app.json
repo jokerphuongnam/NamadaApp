@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "NamadaApp",
+    "displayName": "NamadaApp",
     "slug": "NamadaApp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,7 +10,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "yellow"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -18,6 +19,7 @@
       "supportsTablet": true
     },
     "android": {
+      "useNextGenRn": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"

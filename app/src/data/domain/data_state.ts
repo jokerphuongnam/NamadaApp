@@ -1,0 +1,1 @@
+type dataState<T> = {}

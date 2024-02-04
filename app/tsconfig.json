@@ -1,0 +1,38 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "isolatedModules": true,
+    "strict": true,
+    "paths": {
+      "@screens/*": [
+        "./src/screens/dashboard/*",
+        "./src/screens/home/*",
+        "./src/screens/main/*",
+        "./src/screens/settings/*",
+        "./src/screens/route/*"
+      ],
+      "@network/*": [
+        "./src/data/network/*"
+      ],
+      "@data_state": [
+        "./src/data/domain/data_state"
+      ],
+      "@di/*": [
+        "./src/di/*"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}
